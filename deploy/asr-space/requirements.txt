@@ -1,0 +1,5 @@
+qwen-asr==0.0.6
+torch==2.8.0
+spaces>=0.40
+gradio>=6.30,<7
+av>=14,<17

@@ -1,0 +1,13 @@
+{
+  "synthetic_input": "1s near-silence, seed 42; no human recording",
+  "asr_model": "faster-whisper/small/cpu-int8",
+  "segments": [],
+  "forensic": {
+    "raw_bonafide_score": 1.4451236724853516,
+    "windows": 1,
+    "conclusion": "inconclusive",
+    "calibrated": false
+  },
+  "elapsed_seconds": 30.344026799999483,
+  "limitations": "Loading/inference smoke only. No WER, EER, voice identity or fraud accuracy claim."
+}

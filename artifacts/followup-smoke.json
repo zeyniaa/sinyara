@@ -1,0 +1,28 @@
+{
+  "synthetic_only": true,
+  "model": "ollama/qwen3:4b",
+  "first_answer": {
+    "answer": "Pesan meminta kode OTP untuk menghindari pemblokiran rekening. Permintaan kode rahasia tersebut perlu diverifikasi sebelum dituruti. [content-1]\n\nHost tujuan adalah evil.example.com. Bagian bank.co.id sebelum @ bukan domain tujuan. Informasi ini hanya menjelaskan struktur alamat; reputasi situs belum diperiksa. [url-1-1, url-1-2]",
+    "evidence_ids": [
+      "content-1",
+      "url-1-1",
+      "url-1-2"
+    ],
+    "remaining": 4,
+    "limited": false
+  },
+  "first_seconds": 42.90245700000014,
+  "context_answer": {
+    "answer": "Pengirim mengaku sebagai petugas bank, tetapi identitasnya belum diverifikasi. Permintaan kode OTP untuk menghindari pemblokiran rekening perlu diverifikasi keamanannya sebelum dituruti. [content-1, content-2, user-context]",
+    "evidence_ids": [
+      "content-1",
+      "content-2",
+      "user-context"
+    ],
+    "remaining": 3,
+    "limited": false
+  },
+  "context_seconds": 46.43692870000086,
+  "revision": 2,
+  "limitations": "Small integration smoke, not a semantic accuracy benchmark. Human review remains necessary."
+}

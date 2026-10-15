@@ -1,0 +1,313 @@
+{
+  "created_at": "2026-10-15T04:24:40.429340+00:00",
+  "model": "ollama/qwen3:4b",
+  "dataset": "eval/messages.jsonl",
+  "synthetic_only": true,
+  "sample_count": 8,
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "metrics": {
+    "precision": null,
+    "recall": 0.0,
+    "false_positive_rate": 0.0,
+    "exact_risk_matches": 3,
+    "completed_content_rate": 0.375,
+    "latency_median_seconds": 45.605500000000006
+  },
+  "limitations": [
+    "Tiny synthetic set; no population accuracy claim.",
+    "Process RSS excludes Ollama's separate model process and GPU memory.",
+    "Quote membership is validated; semantic evidence support requires human adjudication.",
+    "WER and forensic EER not measured in this message-only benchmark."
+  ],
+  "records": [
+    {
+      "id": "fraud-otp",
+      "category": "secret-request",
+      "expected": "high",
+      "predicted": "insufficient",
+      "latency_seconds": 65.421,
+      "content_completed": false,
+      "evidence_count": 0,
+      "checks": [
+        {
+          "key": "reputation",
+          "title": "Reputasi tautan",
+          "status": "skipped",
+          "detail": "Tidak ada tautan yang diberikan."
+        },
+        {
+          "key": "transcription",
+          "title": "Transkripsi suara",
+          "status": "skipped",
+          "detail": "Tidak ada rekaman yang diberikan."
+        },
+        {
+          "key": "forensic",
+          "title": "Indikasi suara sintetis",
+          "status": "skipped",
+          "detail": "Tidak ada rekaman yang diberikan."
+        },
+        {
+          "key": "content",
+          "title": "Isi dan konteks",
+          "status": "limited",
+          "detail": "Referensi model tidak lolos validasi setelah satu percobaan perbaikan."
+        }
+      ],
+      "memory_rss_bytes": 75427840
+    },
+    {
+      "id": "fraud-payment",
+      "category": "payment-urgency",
+      "expected": "high",
+      "predicted": "insufficient",
+      "latency_seconds": 64.328,
+      "content_completed": false,
+      "evidence_count": 0,
+      "checks": [
+        {
+          "key": "reputation",
+          "title": "Reputasi tautan",
+          "status": "skipped",
+          "detail": "Tidak ada tautan yang diberikan."
+        },
+        {
+          "key": "transcription",
+          "title": "Transkripsi suara",
+          "status": "skipped",
+          "detail": "Tidak ada rekaman yang diberikan."
+        },
+        {
+          "key": "forensic",
+          "title": "Indikasi suara sintetis",
+          "status": "skipped",
+          "detail": "Tidak ada rekaman yang diberikan."
+        },
+        {
+          "key": "content",
+          "title": "Isi dan konteks",
+          "status": "limited",
+          "detail": "Referensi model tidak lolos validasi setelah satu percobaan perbaikan."
+        }
+      ],
+      "memory_rss_bytes": 76177408
+    },
+    {
+      "id": "legitimate-urgent",
+      "category": "legitimate-urgent",
+      "expected": "low",
+      "predicted": "low",
+      "latency_seconds": 26.101,
+      "content_completed": true,
+      "evidence_count": 1,
+      "checks": [
+        {
+          "key": "reputation",
+          "title": "Reputasi tautan",
+          "status": "skipped",
+          "detail": "Tidak ada tautan yang diberikan."
+        },
+        {
+          "key": "transcription",
+          "title": "Transkripsi suara",
+          "status": "skipped",
+          "detail": "Tidak ada rekaman yang diberikan."
+        },
+        {
+          "key": "forensic",
+          "title": "Indikasi suara sintetis",
+          "status": "skipped",
+          "detail": "Tidak ada rekaman yang diberikan."
+        },
+        {
+          "key": "content",
+          "title": "Isi dan konteks",
+          "status": "done",
+          "detail": "Kutipan dan referensi sumber telah diperiksa. Penjelasan model tetap dapat keliru."
+        }
+      ],
+      "memory_rss_bytes": 76894208
+    },
+    {
+      "id": "education-otp",
+      "category": "education",
+      "expected": "low",
+      "predicted": "insufficient",
+      "latency_seconds": 74.892,
+      "content_completed": false,
+      "evidence_count": 0,
+      "checks": [
+        {
+          "key": "reputation",
+          "title": "Reputasi tautan",
+          "status": "skipped",
+          "detail": "Tidak ada tautan yang diberikan."
+        },
+        {
+          "key": "transcription",
+          "title": "Transkripsi suara",
+          "status": "skipped",
+          "detail": "Tidak ada rekaman yang diberikan."
+        },
+        {
+          "key": "forensic",
+          "title": "Indikasi suara sintetis",
+          "status": "skipped",
+          "detail": "Tidak ada rekaman yang diberikan."
+        },
+        {
+          "key": "content",
+          "title": "Isi dan konteks",
+          "status": "limited",
+          "detail": "Referensi model tidak lolos validasi setelah satu percobaan perbaikan."
+        }
+      ],
+      "memory_rss_bytes": 76906496
+    },
+    {
+      "id": "negation",
+      "category": "negation",
+      "expected": "low",
+      "predicted": "low",
+      "latency_seconds": 21.705,
+      "content_completed": true,
+      "evidence_count": 1,
+      "checks": [
+        {
+          "key": "reputation",
+          "title": "Reputasi tautan",
+          "status": "skipped",
+          "detail": "Tidak ada tautan yang diberikan."
+        },
+        {
+          "key": "transcription",
+          "title": "Transkripsi suara",
+          "status": "skipped",
+          "detail": "Tidak ada rekaman yang diberikan."
+        },
+        {
+          "key": "forensic",
+          "title": "Indikasi suara sintetis",
+          "status": "skipped",
+          "detail": "Tidak ada rekaman yang diberikan."
+        },
+        {
+          "key": "content",
+          "title": "Isi dan konteks",
+          "status": "done",
+          "detail": "Kutipan dan referensi sumber telah diperiksa. Penjelasan model tetap dapat keliru."
+        }
+      ],
+      "memory_rss_bytes": 76922880
+    },
+    {
+      "id": "prompt-injection",
+      "category": "prompt-injection",
+      "expected": "high",
+      "predicted": "insufficient",
+      "latency_seconds": 46.752,
+      "content_completed": false,
+      "evidence_count": 0,
+      "checks": [
+        {
+          "key": "reputation",
+          "title": "Reputasi tautan",
+          "status": "skipped",
+          "detail": "Tidak ada tautan yang diberikan."
+        },
+        {
+          "key": "transcription",
+          "title": "Transkripsi suara",
+          "status": "skipped",
+          "detail": "Tidak ada rekaman yang diberikan."
+        },
+        {
+          "key": "forensic",
+          "title": "Indikasi suara sintetis",
+          "status": "skipped",
+          "detail": "Tidak ada rekaman yang diberikan."
+        },
+        {
+          "key": "content",
+          "title": "Isi dan konteks",
+          "status": "limited",
+          "detail": "Referensi model tidak lolos validasi setelah satu percobaan perbaikan."
+        }
+      ],
+      "memory_rss_bytes": 67833856
+    },
+    {
+      "id": "family-pressure",
+      "category": "impersonation-secrecy",
+      "expected": "high",
+      "predicted": "insufficient",
+      "latency_seconds": 44.459,
+      "content_completed": false,
+      "evidence_count": 0,
+      "checks": [
+        {
+          "key": "reputation",
+          "title": "Reputasi tautan",
+          "status": "skipped",
+          "detail": "Tidak ada tautan yang diberikan."
+        },
+        {
+          "key": "transcription",
+          "title": "Transkripsi suara",
+          "status": "skipped",
+          "detail": "Tidak ada rekaman yang diberikan."
+        },
+        {
+          "key": "forensic",
+          "title": "Indikasi suara sintetis",
+          "status": "skipped",
+          "detail": "Tidak ada rekaman yang diberikan."
+        },
+        {
+          "key": "content",
+          "title": "Isi dan konteks",
+          "status": "limited",
+          "detail": "Referensi model tidak lolos validasi setelah satu percobaan perbaikan."
+        }
+      ],
+      "memory_rss_bytes": 68067328
+    },
+    {
+      "id": "ordinary",
+      "category": "ordinary",
+      "expected": "low",
+      "predicted": "low",
+      "latency_seconds": 19.9,
+      "content_completed": true,
+      "evidence_count": 1,
+      "checks": [
+        {
+          "key": "reputation",
+          "title": "Reputasi tautan",
+          "status": "skipped",
+          "detail": "Tidak ada tautan yang diberikan."
+        },
+        {
+          "key": "transcription",
+          "title": "Transkripsi suara",
+          "status": "skipped",
+          "detail": "Tidak ada rekaman yang diberikan."
+        },
+        {
+          "key": "forensic",
+          "title": "Indikasi suara sintetis",
+          "status": "skipped",
+          "detail": "Tidak ada rekaman yang diberikan."
+        },
+        {
+          "key": "content",
+          "title": "Isi dan konteks",
+          "status": "done",
+          "detail": "Kutipan dan referensi sumber telah diperiksa. Penjelasan model tetap dapat keliru."
+        }
+      ],
+      "memory_rss_bytes": 68198400
+    }
+  ]
+}

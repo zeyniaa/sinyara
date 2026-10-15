@@ -1,0 +1,77 @@
+{
+  "dataset": "google/fleurs",
+  "subset": "id_id",
+  "split": "test",
+  "filename": "10000183170391984234.wav",
+  "source": "https://huggingface.co/datasets/google/fleurs",
+  "license": "CC BY 4.0",
+  "attribution": "FLEURS, Conneau et al., Google, 2022; no audio bundled in repository",
+  "sha256": "7f161741420a7b1c867effcdd6b570ac9f642644748f17fe6599e3830ec39423",
+  "duration_seconds": 8.58,
+  "reference": "Tim-tim virtual memiliki standar keunggulan yang sama dengan tim konvensional, tetapi ada sedikit perbedaan.",
+  "asr_model": "faster-whisper/small/cpu-int8",
+  "records": [
+    {
+      "variant": "clean-wav",
+      "transcript": "Tim-tim virtual memiliki standar keunggulan yang sama dengan tim konvensional, tetapi ada sedikit perbedaan.",
+      "wer": 0.0,
+      "segments": [
+        {
+          "text": "Tim-tim virtual memiliki standar keunggulan yang sama dengan tim konvensional, tetapi ada sedikit perbedaan.",
+          "start": 0.24,
+          "end": 7.24
+        }
+      ],
+      "forensic": {
+        "raw_bonafide_score": -0.6176709135373434,
+        "windows": 3,
+        "conclusion": "inconclusive",
+        "calibrated": false
+      },
+      "latency_seconds": 13.662144699999772
+    },
+    {
+      "variant": "noise-10dB-seed42",
+      "transcript": "Tim-tim virtual memiliki standar keunggulan yang sama dengan tim konvensional, tapi ada sedikit perbedaan.",
+      "wer": 0.06666666666666667,
+      "segments": [
+        {
+          "text": "Tim-tim virtual memiliki standar keunggulan yang sama dengan tim konvensional, tapi ada sedikit perbedaan.",
+          "start": 0.24,
+          "end": 7.24
+        }
+      ],
+      "forensic": {
+        "raw_bonafide_score": -2.8487114310264587,
+        "windows": 3,
+        "conclusion": "inconclusive",
+        "calibrated": false
+      },
+      "latency_seconds": 4.719955599999594
+    },
+    {
+      "variant": "mp3-64kbps",
+      "transcript": "Tim-tim virtual memiliki standar keunggulan yang sama dengan tim konvensional, tetapi ada sedikit perbedaan.",
+      "wer": 0.0,
+      "segments": [
+        {
+          "text": "Tim-tim virtual memiliki standar keunggulan yang sama dengan tim konvensional, tetapi ada sedikit perbedaan.",
+          "start": 0.24,
+          "end": 7.24
+        }
+      ],
+      "forensic": {
+        "raw_bonafide_score": -0.5985052188237509,
+        "windows": 3,
+        "conclusion": "inconclusive",
+        "calibrated": false
+      },
+      "latency_seconds": 4.810645800000202
+    }
+  ],
+  "limitations": [
+    "One recording, three transformations of the same speaker. Not a representative WER estimate.",
+    "No human/synthetic labels for EER; AASIST raw scores are uncalibrated and inconclusive.",
+    "This sample must not be reused as an independent holdout after development on it."
+  ]
+}
