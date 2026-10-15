@@ -2,9 +2,9 @@
 
 <p align="center">
   <a href="https://github.com/zeyniaa/sinyara/actions"><img src="https://github.com/zeyniaa/sinyara/actions/workflows/ci.yml/badge.svg" alt="Checks"></a>
-  <img src="https://img.shields.io/badge/Frontend-HTML%20%2B%20TypeScript-116B62" alt="HTML and TypeScript">
-  <img src="https://img.shields.io/badge/Backend-FastAPI-142D3E" alt="FastAPI">
-  <img src="https://img.shields.io/badge/License-MIT-D6DDBF" alt="MIT license">
+  <img src="https://img.shields.io/badge/Frontend-HTML%20%2B%20TypeScript-58094F" alt="HTML and TypeScript">
+  <img src="https://img.shields.io/badge/Backend-FastAPI-2A445E" alt="FastAPI">
+  <img src="https://img.shields.io/badge/License-MIT-346B6D" alt="MIT license">
 </p>
 
 <p align="center"><b>Kenali indikator risiko. Baca buktinya. Ambil waktu untuk memastikan.</b></p>
@@ -28,7 +28,7 @@ Sinyara membantu masyarakat dan keluarga memeriksa **pesan, tautan, dan rekaman 
 
 ## Yang sudah dibuat
 
-- **HTML yang ramah ponsel.** Tema terang, formulir tiga tab yang mempertahankan input, unggah/drag audio, navigasi keyboard, dan pengurangan animasi.
+- **Antarmuka langsung ke pemeriksaan.** Tema terang dengan aksen ungu, formulir tiga tab yang mempertahankan input, unggah/drag audio, navigasi keyboard, dan pengurangan animasi. Tata letak satu kolom pada ponsel; bukti dan chat berdampingan pada desktop.
 - **Bukti dalam satu kasus.** Kutipan dapat disorot. Timestamp transkrip memutar bagian rekaman lokal yang sesuai.
 - **Percakapan berbasis bukti.** Tanya alasan dan langkah berikutnya. Konteks tambahan meninjau ulang kasus yang sama dan menaikkan nomor revisi.
 - **Progres tahap yang nyata.** Antrean, decoding, transkripsi, pemeriksaan isi, dan validasi. Persentase menghitung tahap selesai, bukan menebak waktu tersisa atau keyakinan AI.
@@ -38,9 +38,9 @@ Sinyara membantu masyarakat dan keluarga memeriksa **pesan, tautan, dan rekaman 
 
 ### Preview
 
-<p align="center"><img src="docs/images/mobile-home.jpg" alt="Screenshot beranda Sinyara pada viewport 390 piksel" width="280"> <img src="docs/images/mobile-real-result.jpg" alt="Hasil nyata dari model lokal pada pesan uji sintetis" width="280"></p>
+<p align="center"><img src="docs/images/mobile-home.jpg" alt="Form pemeriksaan Sinyara pada viewport 390 piksel" width="280"> <img src="docs/images/mobile-result.jpg" alt="Contoh hasil simulasi pada tampilan Sinyara terbaru" width="280"></p>
 
-Screenshot diambil dari aplikasi yang berjalan. Skenario contoh berisi data buatan; unggahan pribadi tidak menjadi bahan demo.
+Screenshot menampilkan form dan hasil simulasi dari aplikasi yang berjalan pada lebar 390 piksel. Skenario contoh berisi data buatan; unggahan pribadi tidak menjadi bahan demo.
 
 ## Stack dan model
 
