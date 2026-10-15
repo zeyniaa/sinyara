@@ -7,7 +7,18 @@
   font-size: 14px; font-weight: 400;
 }
 * { box-sizing: border-box; }
-body { margin: 0; }
+body {
+  margin: 0;
+  /* A quiet dot texture with broad washes from the Sinyara palette. */
+  background-color: #f8f8fa;
+  background-image:
+    radial-gradient(circle, rgb(88 9 79 / 12%) .7px, transparent .9px),
+    radial-gradient(ellipse at 0% 5%, rgb(132 30 98 / 12%), transparent 48%),
+    radial-gradient(ellipse at 100% 68%, rgb(52 107 109 / 9%), transparent 48%),
+    radial-gradient(ellipse at 12% 100%, rgb(243 170 32 / 7%), transparent 42%);
+  background-size: 22px 22px, 100% 100%, 100% 100%, 100% 100%;
+  background-attachment: fixed;
+}
 button, input, textarea { font: inherit; color: inherit; }
 button, a, input, textarea, summary { -webkit-tap-highlight-color: transparent; }
 button { border: 0; background: none; cursor: pointer; }
